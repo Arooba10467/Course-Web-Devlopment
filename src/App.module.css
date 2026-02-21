@@ -1,0 +1,13 @@
+.page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 16px;
+    font-family: system-ui, Arial, sans-serif;
+}
+
+.card {
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
