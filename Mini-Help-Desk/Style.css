@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: pink;
+}
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: peachpuff;
+    border-bottom: 1px solid #ddd;
+    color: rgb(57, 3, 57);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.subtext {
+    font-size: 14px;
+    color: rgb(136, 31, 80);
+    margin: 0;
+}
+
+/* NAVBAR */
+.nav {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    background: rgb(241, 192, 215);
+    border-bottom: 1px solid #ddd;
+    color: rgb(126, 4, 126);
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav .active {
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+     color: rgb(57, 3, 57);
+}
+
+/* CARD */
+.card {
+    background: peachpuff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.card-sub {
+    font-size: 17px;
+    color: rgb(136, 31, 80);
+}
+
+/* TICKET */
+.ticket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: papayawhip;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.ticket div {
+    display: flex;
+    flex-direction: column;
+}
+
+.ticket p {
+    margin: 2px 0 0;
+    font-size: 13px;
+    color: #555;
+}
+
+/* BUTTON */
+.btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(244, 133, 170);
+    cursor: pointer;
+}
+
+.secondary {
+    background: whitesmoke;
+    color: black;
+}
+
+.delete-btn {
+    background: plum;
+}
+
+/* INPUT */
+.input {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+/* PRIORITY */
+.priority {
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.high {
+    background: purple;
+    color: white;
+}
+
+.medium {
+    background: rgb(255, 0, 208);
+    color: white;
+}
+
+.low {
+    background: pink;
+    color: black;
+}
+
+/* FORM BUTTONS */
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    
+}
+
+/* ERROR */
+.error {
+    color: rgb(116, 3, 3);
+    font-size: 17px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #f8ebeb;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333;
+}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+}

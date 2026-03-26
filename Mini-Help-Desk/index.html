@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiniHelpDesk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo-section">
+        <div class="logo-circle">MH</div>
+        <div>
+          <h1>MiniHelpDesk</h1>
+          <p class="subtext">Demo Project by Arooba | CS4717</p>
+        </div>
+      </div>
+      <button class="btn logout-btn">Logout</button>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="nav">
+      <a href="#" class="active">Dashboard</a>
+      <a href="#">Tickets</a>
+      <a href="#">New Ticket</a>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- TICKET LIST -->
+      <section class="card">
+        <h2>My Tickets</h2>
+        <p class="card-sub">Showing initial tickets</p>
+
+        <div id="ticketList">
+          <!-- 5 DEFAULT TICKETS -->
+          <div class="ticket">
+            <div>
+              <strong>Ticket 1:</strong>
+              <p>Unable to login with correct credentials</p>
+            </div>
+            <span class="priority high">High</span>
+            <button class="btn delete-btn">Delete</button>
+          </div>
+
+          <div class="ticket">
+            <div>
+              <strong>Ticket 2:</strong>
+              <p>Dashboard page shows blank screen</p>
+            </div>
+            <span class="priority medium">Medium</span>
+            <button class="btn delete-btn">Delete</button>
+          </div>
+
+          <div class="ticket">
+            <div>
+              <strong>Ticket 3:</strong>
+              <p>Reset link not received in email</p>
+            </div>
+            <span class="priority low">Low</span>
+            <button class="btn delete-btn">Delete</button>
+          </div>
+
+          <div class="ticket">
+            <div>
+              <strong>Ticket 4:</strong>
+              <p>Submit button not working properly</p>
+            </div>
+            <span class="priority medium">Medium</span>
+            <button class="btn delete-btn">Delete</button>
+          </div>
+
+          <div class="ticket">
+            <div>
+              <strong>Ticket 5:</strong>
+              <p>Application not accessible</p>
+            </div>
+            <span class="priority high">High</span>
+            <button class="btn delete-btn">Delete</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORM -->
+      <section class="card">
+        <h2>Create Ticket</h2>
+
+        <form id="ticketForm">
+          <label for="title">Subject</label>
+          <input
+            type="text"
+            id="title"
+            class="input"
+            placeholder="Enter subject..."
+          />
+
+          <label for="description">Description</label>
+          <textarea
+            id="description"
+            class="input"
+            placeholder="Write description..."
+          ></textarea>
+
+          <label for="priority">Priority</label>
+          <select id="priority" class="input">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+
+          <p id="errorMsg" class="error"></p>
+
+          <div class="form-buttons">
+            <button type="reset" class="btn secondary">Clear</button>
+            <button type="submit" class="btn">Create Ticket</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© 2026 MiniHelpDesk — CS4717 Web Technologies</p>
+      <a href="#">Privacy</a>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
