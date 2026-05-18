@@ -104,6 +104,15 @@ body {
     color: #555;
 }
 
+.ticket-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-btn {
+    background: rgb(137, 91, 223);
+    color: white;
+}
 /* BUTTON */
 .btn {
     padding: 6px 12px;
